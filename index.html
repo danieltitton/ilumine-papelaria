@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilumine Papelaria | Mimos e Personalizados</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>Ilumine Papelaria</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#como-funciona">Como Encomendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destaques" class="carousel-section">
+            <h2 class="section-title">Mais Vendidos & Lançamentos</h2>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    
+                    <article class="carousel-item">
+                        <img src="img/destaque-kit-luxo.webp" alt="Kit Festa Luxo Aniversário">
+                        <div class="carousel-caption">
+                            <h3>Kit Festa Luxo Completo</h3>
+                            <p>Tudo o que você precisa para uma festa inesquecível.</p>
+                            <a href="https://wa.me/5511958128348?text=Olá! Quero saber mais sobre o Kit Festa Luxo do carrossel." target="_blank" class="btn-whatsapp">Quero Este Kit</a>
+                        </div>
+                    </article>
+
+                    <article class="carousel-item">
+                        <img src="img/destaque-maternidade.webp" alt="Kit Chá de Bebê Ursinho">
+                        <div class="carousel-caption">
+                            <h3>Linha Maternidade Premium</h3>
+                            <p>Álbuns, caixas cartonadas e lembrancinhas delicadas.</p>
+                            <a href="https://wa.me/5511999999999?text=Olá! Quero saber mais sobre a Linha Maternidade do carrossel." target="_blank" class="btn-whatsapp">Ver Opções</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <button class="carousel-btn btn-prev" aria-label="Slide anterior">&#10094;</button>
+                <button class="carousel-btn btn-next" aria-label="Próximo slide">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="categorias" class="catalog-section">
+            <h2 class="section-title">Nossos Personalizados</h2>
+            <p class="section-subtitle">Escolha o momento que deseja celebrar:</p>
+
+            <div class="filter-buttons">
+                <button class="btn-filter active" data-filter="todos">Todos</button>
+                <button class="btn-filter" data-filter="aniversario">Aniversário</button>
+                <button class="btn-filter" data-filter="cha-bebe">Chá de Bebê</button>
+                <button class="btn-filter" data-filter="batizado">Batizado</button>
+                <button class="btn-filter" data-filter="etiquetas">Etiquetas</button>
+            </div>
+
+            <div class="products-grid">
+
+                <article class="product-card" data-category="aniversario">
+                    <div class="product-image">
+                        <img src="img/prod-sacolinha-festa.webp" alt="Sacolinha de Aniversário Personalizada">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Aniversário</span>
+                        <h3>Sacolinhas Surpresa (De papel)</h3>
+                        <p class="product-price">A partir de R$ 4,50 / un</p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Quero encomendar Sacolinhas de Aniversário." target="_blank" class="btn-card-order">Encomendar no Whats</a>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="cha-bebe">
+                    <div class="product-image">
+                        <img src="img/prod-caixa-milk.webp" alt="Caixa Milk Chá de Bebê">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Chá de Bebê</span>
+                        <h3>Caixa Milk Clássica</h3>
+                        <p class="product-price">A partir de R$ 6,00 / un</p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Quero encomendar Caixas Milk para Chá de Bebê." target="_blank" class="btn-card-order">Encomendar no Whats</a>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="batizado">
+                    <div class="product-image">
+                        <img src="img/prod-lembrancinha-batizado.webp" alt="Lembrancinha de Batizado">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Batizado</span>
+                        <h3>Convite Padrinhos Batizado</h3>
+                        <p class="product-price">Sob consulta</p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para Convite de Batizado." target="_blank" class="btn-card-order">Pedir Orçamento</a>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="etiquetas">
+                    <div class="product-image">
+                        <img src="img/prod-etiquetas-escolares.webp" alt="Cartela de Etiquetas Escolares">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Etiquetas</span>
+                        <h3>Kit Etiquetas Escolares Impermeáveis</h3>
+                        <p class="product-price">R$ 35,00 (Cartela com 60 un)</p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Quero encomendar o Kit de Etiquetas Escolares." target="_blank" class="btn-card-order">Encomendar no Whats</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Minha Papelaria Personalizada. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/seu_usuario" target="_blank">Instagram</a>
+            <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
