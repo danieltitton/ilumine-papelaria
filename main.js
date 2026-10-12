@@ -3,32 +3,56 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ==========================================================================
        1. LÓGICA DO FILTRO DE CATEGORIAS
        ========================================================================== */
-    const botoesFiltro = document.querySelectorAll(".btn-filter");
+    const seletorCategoria = document.querySelector("#category-select");
     const cardsProdutos = document.querySelectorAll(".product-card");
 
-    botoesFiltro.forEach(botao => {
-        botao.addEventListener("click", () => {
-            // 1. Remove a classe 'active' de todos os botões e adiciona no clicado
-            botoesFiltro.forEach(b => b.classList.remove("active"));
-            botao.classList.add("active");
+    const filtrarCategoria = (categoria, atualizarUrl = true) => {
+        const cardsDaCategoria = Array.from(cardsProdutos).filter(
+            card => card.dataset.category === categoria
+        );
+        const categoriaExiste = cardsDaCategoria.length > 0;
+        const categoriaSelecionada =
+            categoria === "todos" || categoriaExiste ? categoria : "todos";
 
-            // 2. Pega a categoria do botão clicado
-            const categoriaSelecionada = botao.getAttribute("data-filter");
-
-            // 3. Filtra os produtos na vitrine
-            cardsProdutos.forEach(card => {
-                const categoriaCard = card.getAttribute("data-category");
-
-                if (categoriaSelecionada === "todos" || categoriaSelecionada === categoriaCard) {
-                    card.style.display = "block"; // Mostra o produto
-                    // Pequeno delay para efeito visual de fade-in controlado por CSS se quiser depois
-                    setTimeout(() => card.style.opacity = "1", 10); 
-                } else {
-                    card.style.opacity = "0";
-                    card.style.display = "none"; // Esconde o produto
-                }
-            });
+        seletorCategoria.value = categoriaSelecionada;
+        cardsProdutos.forEach(card => {
+            card.hidden =
+                categoriaSelecionada !== "todos" &&
+                card.dataset.category !== categoriaSelecionada;
         });
+
+        if (atualizarUrl) {
+            const url = new URL(window.location.href);
+            if (categoriaSelecionada === "todos") {
+                url.searchParams.delete("categoria");
+            } else {
+                url.searchParams.set("categoria", categoriaSelecionada);
+            }
+            window.history.replaceState(null, "", url);
+        }
+
+        if (categoriaSelecionada !== "todos" && cardsDaCategoria.length === 1) {
+            const linkDoProduto = cardsDaCategoria[0].querySelector(
+                ".product-detail-link"
+            );
+            if (linkDoProduto) {
+                window.location.assign(linkDoProduto.href);
+                return;
+            }
+        }
+
+        if (categoriaSelecionada !== "todos") {
+            document.querySelector(".products-grid").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
+
+    const categoriaInicial = new URLSearchParams(window.location.search).get("categoria");
+    filtrarCategoria(categoriaInicial || "todos", false);
+    seletorCategoria.addEventListener("change", () => {
+        filtrarCategoria(seletorCategoria.value);
     });
 
     /* ==========================================================================

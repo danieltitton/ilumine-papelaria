@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça os detalhes dos produtos personalizados da Ilumine Papelaria."
+    />
+    <title>Produto | Ilumine Papelaria</title>
+    <link rel="icon" href="./images/favicon/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./produto.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <h1>
+          <a href="./index.html#inicio">
+            <img src="./images/logo-ilumine.png" alt="Ilumine Papelaria" />
+          </a>
+        </h1>
+      </div>
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="./index.html#categorias">Categorias</a></li>
+          <li><a href="./index.html#catalogo">Catálogo completo</a></li>
+          <li><a href="./index.html#como-funciona">Como encomendar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="product-detail-section">
+      <a class="product-back-link" href="./index.html#categorias">
+        &larr; Voltar para as categorias
+      </a>
+
+      <div
+        class="product-detail-message"
+        id="product-detail-message"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></div>
+
+      <article class="product-detail-card" id="product-detail" hidden>
+        <div class="product-gallery" id="product-gallery">
+          <div class="product-detail-image">
+            <img id="product-image" alt="" />
+          </div>
+          <div
+            class="product-gallery-controls"
+            id="product-gallery-controls"
+            hidden
+          >
+            <button
+              class="product-gallery-arrow"
+              id="product-gallery-previous"
+              type="button"
+              aria-label="Mostrar imagem anterior"
+            >
+              &larr;
+            </button>
+            <span
+              class="product-gallery-position"
+              id="product-gallery-position"
+              aria-live="polite"
+            ></span>
+            <button
+              class="product-gallery-arrow"
+              id="product-gallery-next"
+              type="button"
+              aria-label="Mostrar próxima imagem"
+            >
+              &rarr;
+            </button>
+          </div>
+          <div
+            class="product-gallery-thumbnails"
+            id="product-gallery-thumbnails"
+            role="group"
+            aria-label="Imagens do produto"
+          ></div>
+        </div>
+        <div class="product-detail-content">
+          <span class="product-tag" id="product-category"></span>
+          <h2 id="product-title"></h2>
+          <p class="product-price" id="product-price"></p>
+          <p class="product-detail-description" id="product-description"></p>
+          <section
+            class="product-detail-options"
+            id="product-options-section"
+            hidden
+          >
+            <h3 id="product-options-title"></h3>
+            <ul id="product-options"></ul>
+          </section>
+          <p class="product-detail-note" id="product-note"></p>
+          <a
+            class="btn-whatsapp product-detail-order"
+            id="product-order"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar e encomendar pelo WhatsApp
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 Ilumine Papelaria. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/papelariailumine" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://wa.me/5511958128348" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </footer>
+  </body>
+</html>

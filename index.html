@@ -46,12 +46,21 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#destaques">Destaques</a></li>
           <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
           <li><a href="#como-funciona">Como Encomendar</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <section id="inicio" class="intro-section">
+        <h2>Presentes personalizados que encantam</h2>
+        <p>
+          Cestas, lembrancinhas e detalhes feitos com carinho para transformar
+          momentos especiais em boas lembranças.
+        </p>
+      </section>
+
       <section id="destaques" class="carousel-section">
         <h2 class="section-title">Mais Vendidos & Lançamentos</h2>
 
@@ -102,100 +111,531 @@
       </section>
 
       <section id="categorias" class="catalog-section">
-        <h2 class="section-title">Nossos Personalizados</h2>
-        <p class="section-subtitle">Escolha o momento que deseja celebrar:</p>
+        <h2 class="section-title">Categorias do nosso catálogo</h2>
+        <p class="section-subtitle">
+          Encontre lembranças e personalizados para diferentes ocasiões.
+        </p>
+        <p class="catalog-price-note">
+          Os valores “a partir de” seguem o catálogo. Quando não há preço
+          informado, consulte o valor do modelo escolhido pelo WhatsApp.
+        </p>
 
-        <div class="filter-buttons">
-          <button class="btn-filter active" data-filter="todos">Todos</button>
-          <button class="btn-filter" data-filter="aniversario">
-            Aniversário
-          </button>
-          <button class="btn-filter" data-filter="cha-bebe">Chá de Bebê</button>
-          <button class="btn-filter" data-filter="batizado">Batizado</button>
-          <button class="btn-filter" data-filter="etiquetas">Etiquetas</button>
+        <div class="category-navigation">
+          <label for="category-select">Ir direto para uma categoria</label>
+          <select id="category-select" name="categoria">
+            <option value="todos">Todas as categorias</option>
+            <option value="kit-lembrancinhas">Kit Lembrancinhas</option>
+            <option value="livrinhos">Livrinhos de Colorir</option>
+            <option value="placas-mesa">Placas de Mesa</option>
+            <option value="papelaria-criativa">Papelaria Criativa</option>
+            <option value="natal">Natal</option>
+            <option value="embalagens">Embalagens</option>
+            <option value="dia-criancas">Dia das Crianças</option>
+            <option value="chaveiros-post-it">Chaveiros Post It</option>
+            <option value="adesivos-tags">Adesivos e Tags</option>
+            <option value="dia-professores">Dia dos Professores</option>
+            <option value="papelaria-personalizada">
+              Papelaria Personalizada
+            </option>
+            <option value="cestas-presentes">Cestas &amp; Presentes</option>
+            <option value="amor-papel">Amor em Forma de Papel</option>
+          </select>
         </div>
 
         <div class="products-grid">
-          <article class="product-card" data-category="aniversario">
+          <article class="product-card" data-category="kit-lembrancinhas">
             <div class="product-image">
               <img
-                src="./images/caixas-piramide.png"
-                alt="Sacolinha de Aniversário Personalizada"
+                src="./images/catalogo/produtos/kit-lembrancinhas-01.jpg"
+                alt="Kit de caixinhas personalizadas para lembrancinhas"
+                loading="lazy"
               />
             </div>
             <div class="product-info">
-              <span class="product-tag">Aniversário</span>
-              <h3>Sacolinhas Surpresa (De papel)</h3>
-              <p class="product-price">A partir de R$ 4,50 / un</p>
+              <span class="product-tag">Kit Lembrancinhas</span>
+              <h3>Kit lembrancinha personalizado com nome</h3>
+              <p>
+                O kit reúne cinco modelos de caixinhas: Pirâmide, Sacolinha com
+                Alça, Milk, Cubo e Maletinha. Personalizado com nome; escolha
+                entre acabamento com ou sem laço. A idade pode ser incluída
+                quando aplicável à arte.
+              </p>
+              <p class="product-price">A partir de R$ 24,99</p>
               <a
-                href="https://wa.me/5511958128348?text=Olá! Quero encomendar Sacolinhas de Aniversário."
+                class="product-detail-link"
+                href="./produto.html?produto=kit-lembrancinhas"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer os kits de lembrancinhas do catálogo."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-card-order"
-                >Encomendar no Whats</a
+                >Consultar no WhatsApp</a
               >
             </div>
           </article>
 
-          <article class="product-card" data-category="cha-bebe">
+          <article class="product-card" data-category="livrinhos">
             <div class="product-image">
               <img
-                src="./images/milk-guerreiras.png"
-                alt="Caixa Milk Chá de Bebê"
+                src="./images/catalogo/produtos/livrinhos-01.jpg"
+                alt="Livrinhos de colorir personalizados"
+                loading="lazy"
               />
             </div>
             <div class="product-info">
-              <span class="product-tag">Chá de Bebê</span>
-              <h3>Caixa Milk Clássica</h3>
-              <p class="product-price">A partir de R$ 6,00 / un</p>
+              <span class="product-tag">Livrinhos de Colorir</span>
+              <h3>Livrinhos para colorir</h3>
+              <p>
+                Livrinhos de colorir com capas temáticas. O catálogo mostra
+                opções como Pool Party Azul, Cerejinha, Margaridas e Primeira
+                Volta ao Sol Rosa. Consulte temas e preço disponíveis.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
               <a
-                href="https://wa.me/5511958128348?text=Olá! Quero encomendar Caixas Milk para Chá de Bebê."
+                class="product-detail-link"
+                href="./produto.html?produto=livrinhos"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer os livrinhos de colorir do catálogo."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-card-order"
-                >Encomendar no Whats</a
+                >Consultar no WhatsApp</a
               >
             </div>
           </article>
 
-          <article class="product-card" data-category="batizado">
+          <article class="product-card" data-category="placas-mesa">
             <div class="product-image">
               <img
-                src="img/prod-lembrancinha-batizado.webp"
-                alt="Lembrancinha de Batizado"
+                src="./images/catalogo/produtos/placas-mesa-01.jpg"
+                alt="Plaquinha de mesa personalizada para aniversário"
+                loading="lazy"
               />
             </div>
             <div class="product-info">
-              <span class="product-tag">Batizado</span>
-              <h3>Convite Padrinhos Batizado</h3>
-              <p class="product-price">Sob consulta</p>
+              <span class="product-tag">Placas de Mesa</span>
+              <h3>Plaquinhas para momentos especiais</h3>
+              <p>
+                Modelos personalizados para celebrações como 15 anos,
+                batizados e casamentos. Consulte as opções de arte e acabamento
+                para a sua ocasião.
+              </p>
+              <p class="product-price">A partir de R$ 24,99</p>
               <a
-                href="https://wa.me/5511958128348?text=Olá! Gostaria de um orçamento para Convite de Batizado."
+                class="product-detail-link"
+                href="./produto.html?produto=placas-mesa"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero consultar as placas de mesa personalizadas do catálogo."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-card-order"
-                >Pedir Orçamento</a
+                >Consultar no WhatsApp</a
               >
             </div>
           </article>
 
-          <article class="product-card" data-category="etiquetas">
+          <article class="product-card" data-category="papelaria-criativa">
             <div class="product-image">
               <img
-                src="img/prod-etiquetas-escolares.webp"
-                alt="Cartela de Etiquetas Escolares"
+                src="./images/catalogo/produtos/papelaria-criativa-01.jpg"
+                alt="Bloco e formulário de pedidos personalizado"
+                loading="lazy"
               />
             </div>
             <div class="product-info">
-              <span class="product-tag">Etiquetas</span>
-              <h3>Kit Etiquetas Escolares Impermeáveis</h3>
-              <p class="product-price">R$ 35,00 (Cartela com 60 un)</p>
+              <span class="product-tag">Papelaria Criativa</span>
+              <h3>Papelaria e acessórios para festas</h3>
+              <p>
+                O catálogo apresenta Porta Xuxinha e itens para festas, como
+                Porta Bis, cachepôs para centro de mesa ou saquinhos de pipoca
+                e forminhas para docinhos. Consulte modelos e personalizações.
+              </p>
+              <p class="product-price">A partir de R$ 24,99</p>
               <a
-                href="https://wa.me/5511958128348?text=Olá! Quero encomendar o Kit de Etiquetas Escolares."
+                class="product-detail-link"
+                href="./produto.html?produto=papelaria-criativa"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer a papelaria criativa do catálogo."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-card-order"
-                >Encomendar no Whats</a
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="natal">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/natal-01.jpg"
+                alt="Lembrancinhas personalizadas com tema de Natal"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Natal</span>
+              <h3>Lembranças para o Natal</h3>
+              <p>
+                Papelaria e mimos natalinos personalizados para presentear. O
+                catálogo mostra opções de Porta Xuxinha com estampas e
+                mensagens de Natal.
+              </p>
+              <p class="product-price">A partir de R$ 24,99</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=natal"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer as opções de Natal do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="embalagens">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/embalagens-01.jpg"
+                alt="Embalagem personalizada de papel para presente"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Embalagens</span>
+              <h3>Embalagens personalizadas</h3>
+              <p>
+                Embalagens e peças de papel personalizadas para montar presentes
+                e lembranças. Consulte os modelos, temas e itens que podem
+                compor cada opção.
+              </p>
+              <p class="product-price">A partir de R$ 24,99</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=embalagens"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero consultar as embalagens personalizadas do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="dia-criancas">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/dia-criancas-01.jpg"
+                alt="Kit de doces personalizado para o Dia das Crianças"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Dia das Crianças</span>
+              <h3>Mimos da Alegria</h3>
+              <p>
+                Lembrancinhas com doces e embalagem temática para o Dia das
+                Crianças. Podem ser personalizadas com nome e, quando aplicável
+                à arte, idade.
+              </p>
+              <p class="product-price">A partir de R$ 24,99</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=dia-criancas"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero consultar os produtos de Dia das Crianças do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="chaveiros-post-it">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/chaveiros-post-it-01.jpg"
+                alt="Chaveiros personalizados com bloco de notas"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Chaveiros Post It</span>
+              <h3>Chaveiros com bloco de notas</h3>
+              <p>
+                Bloquinhos de notas em formato compacto, com argola para levar
+                como chaveiro. Consulte estampas, personalização e preço.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=chaveiros-post-it"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer os chaveiros Post It do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="adesivos-tags">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/adesivos-tags-01.jpg"
+                alt="Adesivos redondos com mensagens personalizadas"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Adesivos e Tags</span>
+              <h3>Mensagens para acompanhar presentes</h3>
+              <p>
+                Adesivos redondos e tags com frases carinhosas, de agradecimento
+                e gratidão para fechar embalagens ou acompanhar lembrancinhas.
+                Consulte o valor conforme o modelo e a quantidade.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=adesivos-tags"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero consultar os adesivos e tags do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="dia-professores">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/dia-professores-01.jpg"
+                alt="Lembrancinha em formato de lápis para o Dia dos Professores"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Dia dos Professores</span>
+              <h3>Mimos que encantam</h3>
+              <p>
+                Lembranças com mensagens para homenagear professores. O
+                catálogo apresenta opções com frases como “Amor”, “Carinho”,
+                “Mundo” e “Esperança”. Consulte modelos e preço.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=dia-professores"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer as opções para o Dia dos Professores."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="product-card"
+            data-category="papelaria-personalizada"
+          >
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/papelaria-personalizada-01.jpg"
+                alt="Calendário de mesa personalizado com ilustrações"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Papelaria Personalizada</span>
+              <h3>Papelaria com a sua identidade</h3>
+              <p>
+                Peças de papelaria com arte e mensagens personalizadas para
+                presentear ou usar no dia a dia. Consulte opções, quantidade e
+                preço.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=papelaria-personalizada"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer a papelaria personalizada do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="cestas-presentes">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/cestas-presentes-01.jpg"
+                alt="Cesta de presente com doces e detalhes personalizados"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Cestas &amp; Presentes</span>
+              <h3>Presentes montados para surpreender</h3>
+              <p>
+                Cestas e composições para presentear, com itens que variam
+                conforme a ocasião e a opção escolhida. Consulte conteúdo,
+                disponibilidade e preço.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=cestas-presentes"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer as opções de cestas e presentes do catálogo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
+              >
+            </div>
+          </article>
+
+          <article class="product-card" data-category="amor-papel">
+            <div class="product-image">
+              <img
+                src="./images/catalogo/produtos/amor-papel-01.jpg"
+                alt="Caixinhas de papel personalizadas para presentear"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-info">
+              <span class="product-tag">Amor em Forma de Papel</span>
+              <h3>Presentes com carinho em cada detalhe</h3>
+              <p>
+                Embalagens e presentes personalizados em papel para celebrar
+                momentos especiais. Consulte os modelos, itens incluídos e
+                preço conforme a composição.
+              </p>
+              <p class="product-price">Preço sob consulta</p>
+              <a
+                class="product-detail-link"
+                href="./produto.html?produto=amor-papel"
+                >Ver detalhes do produto</a
+              >
+              <a
+                href="https://wa.me/5511958128348?text=Olá! Quero conhecer os produtos Amor em Forma de Papel."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-card-order"
+                >Consultar no WhatsApp</a
               >
             </div>
           </article>
         </div>
+      </section>
+
+      <section id="catalogo" class="catalog-section">
+        <h2 class="section-title">Catálogo Ilumine</h2>
+        <p class="section-subtitle">
+          Explore o catálogo completo para ver mais modelos, inspirações e
+          detalhes dos produtos.
+        </p>
+
+        <div class="catalog-viewer">
+          <iframe
+            src="https://www.canva.com/design/DAHXLm82MDE/wE-EYEQUZRwyiBrUS3Hmpw/view?embed"
+            title="Novo catálogo da Ilumine Papelaria"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+          <a
+            href="https://www.canva.com/design/DAHXLm82MDE/wE-EYEQUZRwyiBrUS3Hmpw/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="catalog-open-link"
+            >Abrir catálogo completo em uma nova aba</a
+          >
+        </div>
+      </section>
+
+      <section id="como-funciona" class="order-section">
+        <h2 class="section-title">Como encomendar</h2>
+        <p class="section-subtitle">
+          Seu presente fica a poucos passos de ficar pronto.
+        </p>
+
+        <ol class="order-steps">
+          <li>
+            <h3>Escolha o produto</h3>
+            <p>
+              Escolha uma opção do catálogo ou fale conosco para criar um
+              modelo exclusivo.
+            </p>
+          </li>
+          <li>
+            <h3>Fale pelo WhatsApp</h3>
+            <p>
+              Informe o produto desejado, a data da entrega e as personalizações
+              que gostaria de incluir.
+            </p>
+          </li>
+          <li>
+            <h3>Confirme os detalhes</h3>
+            <p>Nossa equipe confirma os detalhes e envia o valor final.</p>
+          </li>
+          <li>
+            <h3>Faça o pagamento</h3>
+            <p>
+              Aceitamos Pix e cartão de crédito ou débito via link. A produção
+              começa após a confirmação do pagamento.
+            </p>
+          </li>
+          <li>
+            <h3>Receba ou retire</h3>
+            <p>
+              Cestas: entrega em Barueri e região (consulte a taxa) ou retirada
+              em Barueri mediante agendamento. Os demais produtos são enviados
+              para todo o Brasil pela Shopee.
+            </p>
+          </li>
+        </ol>
+        <a
+          href="https://wa.me/5511958128348?text=Olá! Quero fazer uma encomenda."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="order-contact"
+          >Fazer pedido pelo WhatsApp</a
+        >
       </section>
     </main>
 
